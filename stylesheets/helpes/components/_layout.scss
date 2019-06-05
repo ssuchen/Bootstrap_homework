@@ -1,0 +1,88 @@
+
+
+.container{
+    @include phone-size{
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+  .header-jumbotron{
+  height: 496px;
+  background-image: url(https://images.unsplash.com/photo-1473256599800-b48c7c88cd7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae0d68ab0d;);
+  
+  @include phone-size{
+    margin: 0;
+    padding-left: 10px;
+  }
+  
+  }
+  .pic-margin{
+  margin-top:-20px; 
+  margin-bottom:-20px;    
+  }
+  
+
+
+////navbar////
+
+  .index-nav{
+    .navbar {
+        @include phone-size{
+         flex-direction: row-reverse; 
+         }
+      .index-logo-lg{
+        @include phone-size{
+         display: none;
+        }
+      } 
+      .index-logo-sm{
+        display: none;
+        @include phone-size{
+          display: block;
+        }
+      }
+       
+      .navbar-toggler{
+  border:0; 
+      }
+      
+      
+    }
+   
+  }
+  
+
+
+
+
+///footer////
+.footer{
+    .row{
+        @include phone-size{
+            margin:0 !important;
+        }
+    }
+    .footer-width .px-10{
+     @include phone-size{
+         padding-right:30px !important;
+         padding-left:30px !important;
+     }    
+     
+    }
+    .footer-title{
+        @include phone-size{
+         margin-bottom:33px;    
+        }
+      
+    }
+   .footer-sm-hide{
+       @include phone-size{
+           display: none;
+       }
+   }
+   .footer-logo-height{
+    @include phone-size{
+        padding-bottom: 40px !important;
+    }   
+   }
+}

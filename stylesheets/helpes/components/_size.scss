@@ -1,0 +1,19 @@
+
+
+//基本樣式設定//
+a{
+text-decoration: none !important;
+}
+
+//mixin////
+@mixin pad-size {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phone-size {
+  @media (max-width: 576px) {
+    @content;
+  }
+}

@@ -1,0 +1,82 @@
+
+
+.index-content {
+@include phone-size{
+   background-color:$second;     
+}
+
+    .bg-second{
+     @include phone-size{
+    background :rgba($color: #fff, $alpha: 0) !important; 
+     }   
+    
+    }
+  .index-main {
+    @include phone-size {
+      height: 250px;
+      margin-top: 0;
+    }
+  }
+  .index-text {
+    img {
+      @include phone-size {
+        display: none;
+      }
+    }
+    .py-7{
+        @include phone-size{
+         padding-top: 30px !important;
+         padding-bottom: 0px !important;    
+        }   
+    }
+
+    .pr-3{
+        @include phone-size{
+            padding-left:30px;
+            padding-right:30px;
+        }
+    }
+    .text-vertical {
+        @include phone-size{
+      writing-mode:horizontal-tb;
+      -webkit-writing-mode: horizontal-tb;
+      line-height: 2em; 
+      padding-top:0; 
+    
+        }
+     
+    }
+  }
+
+  .index-text-title {
+    display:none;
+    @include phone-size {
+      display: block;
+      height: 120px;
+      width: 100vw;
+      padding: 30px;
+      background-color: #fff;
+    }
+  }
+.index-main-sm-pic {
+    display:none;
+    @include phone-size{
+        display: block;
+    }
+}
+
+  .index-main-lg-pic{
+    @include phone-size{
+        display:none; 
+    } 
+  }
+
+}
+
+.index-menu{
+    @include phone-size{
+        display: none;
+    }
+}
+
+

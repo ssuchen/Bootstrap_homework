@@ -1,0 +1,15 @@
+
+
+
+//文字垂直
+.text-vertical{
+    writing-mode:vertical-rl;
+    -webkit-writing-mode:vertical;
+    line-height:2.5em;
+    @include phone-size{
+      line-height:1em;
+    }
+    
+    
+    }
+    

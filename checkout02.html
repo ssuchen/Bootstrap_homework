@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" href="img/webicon.ico">
+    <meta name='description' content='六角甜點期末作業' />
+
+    <meta property="og:title" content="六角甜點期末作業" />
+    <meta property="og:description" content="用bootstrap4寫的期末作業">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="六角甜點期末作業" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <link rel="stylesheet" href="stylesheets/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <title>六角甜點電商</title>
+  </head>
+
+<body>
+    <div class="index-nav container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-tranparent ">
+            <a class=" navbar-brand" href="#"
+              ><img
+                class="index-logo-lg"
+                src="img/logo-all-dark.svg"
+                alt=""
+                style="height:40px;"
+              />
+            </a>
+            <a href="#" class="index-logo-sm"
+              ><i class="fas fa-shopping-cart text-primary"></i
+            ></a>
+            <a class="" href="#"
+              ><img
+                class="index-logo-sm"
+                src="img/logotype-sm-dark.svg"
+                alt=""
+                style="height:18px;"
+              />
+            </a>
+    
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">首頁 </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html">甜點</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">登入</a>
+                </li>
+                <li class="nav-item index-logo-lg">
+                  <a href="cart.html" class="nav-link"
+                    ><i class="fas fa-shopping-cart text-primary"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+
+    <div class="container pb-md-10 ">
+
+        <div class="row mx-6 mt-5 justify-content-center checkout">
+            <div class="col-lg-6 px-0">
+        <div class="checkout-table">
+           <form class="bg-primary pt-4 ">
+                    <div class="container-fluid px-6">
+                        <div class="row align-items-center my-5 ">
+                            <div class="col-6">
+                                <div class=" text-second h2">付款</div>
+                            </div>
+                            <div class="col-6 pl-0">
+                                <div class="px-1">
+                                    <div class="step-line">
+                                        <div class="d-flex justify-content-between">
+                                            <li class="" style="background-color:#EAF0ED;">
+                                                <div class="step-line-tick"></div>
+                                            </li>
+                                            <li class="">
+                                                <div class="step-line-point pt-0 "></div>
+                                            </li>
+                                            <li></li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationDefault01" class="text-second">信用卡卡號</label>
+                                <div class="" style=" position: relative;">
+                                    <input type="text" class="form-control bg-second  text-deep pr-6" id="validationDefault01"
+                                    placeholder="9012-3456-7890-1234" required style="height: 56px;">
+                                    <i class="far fa-credit-card text-primary" style="position:absolute; font-size: 24px;
+                                     top: 30%;right:5%; "></i>   
+                                </div>
+                             
+                            </div>
+                            <div class="col-md-12 ">
+                                <label for="validationDefault01" class="text-second">持卡人姓名</label>
+                            </div>
+                            <div class="col-6 mb-3 ">
+                                <input type="text" class="form-control bg-second  text-deep" id="validationDefault02"
+                                    placeholder="王" required style="height: 56px;">
+                            </div>
+                            <div class="col-6 mb-3 ">
+                                <input type="text" class="form-control bg-second  text-deep" id="validationDefault02"
+                                    placeholder="小明" required style="height: 56px;">
+                            </div>
+                        </div>
+                        <div class="form-row mb-5">
+                            <div class="col-md-12 pl-0">
+                                <label for="validationDefault01" class="text-second">有效期限</label>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <select id="inputState  text-deep" class="form-control  bg-second text-deep "
+                                        style="height: 56px">
+                                        <option value="1">1月</option>
+                                        <option value="2">2月</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group pr-0">
+                                    <select id="inputState  text-deep" class="form-control bg-second text-deep "
+                                        style="height: 56px;">
+                                        <option value="1">2019年</option>
+                                        <option value="2">2020年</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3 ">
+                                <label for="validationDefault01" class="text-second">背面末三碼</label>
+                                <input type="text" class="form-control bg-second  text-deep" id="validationDefault01"
+                                    placeholder="123" required style="height: 56px;">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <button type="submit" class="btn btn-block btn-info my-0 text-primary"
+                        style="height:65px; font-size: 24px;"> <a href="checkout03-1.html">下一步</a> </button>
+
+
+           </form>
+        </div>
+                
+
+
+            </div>
+
+            <div class="col-lg-4 d-lg-block d-none">
+                <div class="card mb-4">
+                    <div class="card-head border-second bg-second py-4 text-center text-primary h4">
+                        <strong>訂單摘要</strong>
+                    </div>
+                    <div class="card-body pt-3">
+                        <div class="d-flex text-deep pb-2">
+                            <div class=" mr-auto ">小計</div>
+                            <div class="">NT$ 2,700</div>
+                        </div>
+                        <div class="d-flex text-deep pb-3">
+                            <div class=" mr-auto ">運費</div>
+                            <div class="">NT$ 300</div>
+                        </div>
+                        <div class="d-flex text-deep pb-3 h4">
+                            <div class=" mr-auto ">
+                                <strong>總計</strong></div>
+                            <div class="">NT$ 3,000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-head border-second bg-second py-4 mb-0 text-center text-primary h4">
+                        <strong>購物清單</strong>
+                    </div>
+                    <div class="card-body pb-4 pt-4">
+                        <div class=" d-flex d-flex align-items-center">
+                            <div class="bg-cover mr-auto " style="width:100px;height: 80px;
+                                 background-image: url(https://bit.ly/2QvsT63)"></div>
+                            <div class="text-deep ">
+                                <p class="mb-0">焦糖馬卡龍（2）</p>
+                                <p class="h4">NT$ 900</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body pb-4 pt-0">
+                        <div class=" d-flex d-flex align-items-center">
+                            <div class="bg-cover mr-auto " style="width:100px;height: 80px;
+                                     background-image: url(https://bit.ly/2zBDAxX)"></div>
+                            <div class="text-deep ">
+                                <p class="mb-0">焦糖馬卡龍（2）</p>
+                                <p class="h4">NT$ 900</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body pb-4 pt-0">
+                        <div class=" d-flex d-flex align-items-center">
+                            <div class="bg-cover mr-auto " style="width:100px;height: 80px;
+                                         background-image: url(https://bit.ly/2zKOP7w)"></div>
+                            <div class="text-deep ">
+                                <p class="mb-0">焦糖馬卡龍（2）</p>
+                                <p class="h4">NT$ 900</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    </div>
+    </div>
+
+
+    <!-- 表單送出 -->
+
+    <div class="footer">
+        <div class="footer-width bg-primary py-5">
+          <div class="container px-10">
+            <div class="row mr-3">
+              <div class="col-lg-5 d-flex mr-auto footer-title">
+                <img
+                  src="img/logo-light.svg"
+                  alt=""
+                  style="max-width:40px; max-height:40px;"
+                />
+                <p class="text-white px-3 h4 mt-1">訂閱你我的甜蜜郵件</p>
+              </div>
+              <div class="col-lg-5">
+                <form class="input-group-prepend  mx-0 my-lg-0">
+                  <i
+                    class="fas fa-envelope text-primary ml-4 mt-4"
+                    style="position:absolute; font-size: 24px;"
+                  ></i>
+                  <input
+                    class="form-control  border-0 rounded-0 mx-0 pl-6 bg-second"
+                    style="height: 56px;"
+                    type="search"
+                    placeholder="Search"
+                    aria-label=""
+                  />
+                  <button class="btn btn-info rounded-0 my-0 mx-0" type="submit">
+                    <i
+                      class="fas fa-arrow-right text-primary"
+                      style="font-size:24px;"
+                    ></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-width bg-second py-5">
+          <div class="container px-10">
+            <div class="row">
+              <div class="col-lg-8 ">
+                <img
+                  src="img/logotype-lg-dark.svg"
+                  alt=""
+                  class="pb-10 footer-logo-height"
+                  style="max-width: 171px;"
+                />
+                <ul class="text-primary pl-0" style="list-style:none;">
+                  <li>07-1234-5678</li>
+                  <li><a href="">sweetaste@email.com</a></li>
+                  <li>800 高雄市新興區幸福路 520 號</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 footer-sm-hide">
+                <img
+                  src="img/sm-今天是個吃甜點的好日子.svg"
+                  style="max-height:218px;"
+                  alt=""
+                />
+              </div>
+              <div class="col-lg-12 d-flex mt-5">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <ul class="pl-0 d-flex" style="list-style:none;">
+                      <li>
+                        <img
+                          src="img/ic-line@.svg"
+                          alt=""
+                          class="mr-3"
+                          style="width: 32px"
+                        />
+                      </li>
+                      <li>
+                        <img
+                          src="img/ic-facebook.svg"
+                          alt=""
+                          class="mr-3"
+                          style="width: 32px"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 pr-0">
+                    <p class="text-primary ml-auto ">
+                      © 2018 Sweetaste* All Rights Reserved
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</html>

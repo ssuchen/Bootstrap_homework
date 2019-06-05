@@ -1,0 +1,124 @@
+//steps-line步驟進度條
+
+.step-line li {
+    position: relative;
+    list-style-type:none;
+    width: 1.25em;
+    height: 1.25em;
+    background: #3F5D45;
+    border: 1px solid#EAF0ED;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .step-line-point {
+    position: absolute;
+    width: .9em;
+    height: .9em;
+    background: #EAF0ED;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    z-index: 3;
+  
+  }
+  
+  .step-line{
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      background:#EAF0ED;
+      left: 0;
+      right: 0;
+      top: 50%;
+      height: 1px;
+      transform: translatey(-50%);
+      z-index: 1;
+  
+    }
+  
+  }
+  
+  // 勾勾
+  
+  .step-line-tick {
+    height: 45px;
+    position: relative;
+    width: 45px;
+  }
+  .step-line-tick:after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    margin: 5% 0 0 13%;
+    top: 0;
+    width: 10%;
+    border-bottom: .1em solid  #3F5D45;
+    height: 25%;
+    border-right: .1em solid  #3F5D45;
+    transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
+    
+  //steps-line(深色)步驟進度條
+  
+  .step-line-dark li {
+    position: relative;
+    list-style-type:none;
+    width: 1.25em;
+    height: 1.25em;
+    background: #3F5D45;
+    border: 1px solid#3F5D45;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .step-line-dark{
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      background:#3F5D45;
+      left: 0;
+      right: 0;
+      top: 50%;
+      height: 1px;
+      transform: translatey(-50%);
+      z-index: 1;
+  
+    }
+  
+  }
+  
+  // 白色勾勾
+  
+  .step-line-tick-dark {
+    height: 45px;
+    position: relative;
+    width: 45px;
+  }
+  .step-line-tick-dark:after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    margin: 5% 0 0 13%;
+    top: 0;
+    width: 10%;
+    border-bottom: .1em solid  #EAF0ED;
+    height: 25%;
+    border-right: .1em solid  #EAF0ED;
+    transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  

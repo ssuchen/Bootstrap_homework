@@ -1,0 +1,21 @@
+
+.checkout {
+    @include phone-size{
+      margin:0 !important;
+    }
+     
+}
+.checkout-table{
+    .px-6{
+    @include phone-size{
+      padding: 0 30px !important;
+  }  
+}     
+    }
+.checkout-seccess-img{
+   .mb-3{
+       @include phone-size{
+           margin-bottom:0 !important;
+       }
+   } 
+}

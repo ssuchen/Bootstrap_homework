@@ -1,0 +1,23 @@
+//愛心按鈕
+.like-btn-position{
+  position: absolute;
+  right:35px;
+  top:20px;
+}
+
+.like-btn{
+    position: relative;
+    
+   .like,.unlike {
+     color: #3F5D45;
+    }
+   
+    }
+    .like {
+     position: absolute;
+    }
+    .unlike {
+      position: absolute;
+     display: none;
+    }
+    

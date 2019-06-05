@@ -1,0 +1,13 @@
+
+//卡片標籤
+.card-label{
+position: absolute;
+left: 15px;
+color: #fff;
+letter-spacing:5px;
+background: $primary;
+ padding: 25px 5px; 
+ @include phone-size{
+padding: 20px 10px;
+ } 
+}

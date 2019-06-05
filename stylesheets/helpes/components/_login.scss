@@ -1,0 +1,27 @@
+
+
+.login {
+    @include phone-size{
+       padding-bottom:0px !important; 
+    }
+  .login-form {
+    @include phone-size {
+      margin-top: 0px !important;
+    }
+  }
+  .login-lg {
+    @include phone-size{
+    display: none;
+    }
+  }
+  .login-sm-linkform{
+   display: none;
+ @include phone-size{
+      display: block;
+              }
+     .btn-block{
+     border:1px solid $second;
+     margin-top: 0;
+     }         
+  }
+}
